@@ -1,3 +1,4 @@
+@import './pokedex.css';
 
 :root {
   --white: #fffffe;
@@ -6,12 +7,21 @@
   --secondary: #163355;
   --body1: 400 0.75rem/1.5rem Roboto;
   --body3: 400 0.5rem/0.4556451737880707rem Roboto;
-  --body2-regular: 400 0.75rem/1.375rem Space Mono;
+  --body2-regular: 400 0.75rem/1.375rem monospace;
 }
 
 body {
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
   color: var(--white);
-  background-color: var(--black);
+  font: var(--body1);
+  background-color: var(--secondary);
+
+  min-block-size: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
