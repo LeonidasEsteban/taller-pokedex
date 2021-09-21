@@ -8,11 +8,11 @@
   perspective: 1000px;
 }
 
-.pokedex:is(:hover, :focus, :focus-within) .cover-front{
+.pokedex:is(:hover, :focus, :focus-within, .is-open) .cover-front{
   transform: rotateY(180deg);
 }
 
-.pokedex:is(:hover, :focus, :focus-within) .cover-back{
+.pokedex:is(:hover, :focus, :focus-within, .is-open) .cover-back{
   transform: rotateY(0);
 }
 

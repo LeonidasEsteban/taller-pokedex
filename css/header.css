@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  background-color: #C70424;
+  margin: -1.5rem;
+  margin-block-end: 0;
+  padding: 1.5rem;
+  padding-block-start: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.5rem), 70% calc(100% - 1.5rem), 0 100%);
+}
+
+.header-shadow {
+  filter: drop-shadow(0 .25rem 0 black);
+}
+
+
+.header .light {
+  margin-inline-end: .5rem;
+}
+
+.header .light.is-big {
+  margin-inline-end: 1rem;
+}
