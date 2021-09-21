@@ -1,4 +1,5 @@
 @import './pokedex.css';
+@import './cover.css';
 
 :root {
   --white: #fffffe;

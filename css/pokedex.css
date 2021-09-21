@@ -3,12 +3,23 @@
   max-inline-size: 24rem;
   inline-size: 100%;
   outline: none;
+
+  position: relative;
+  perspective: 1000px;
+}
+
+.pokedex:is(:hover, :focus, :focus-within) .cover-front{
+  transform: rotateY(180deg);
+}
+
+.pokedex:is(:hover, :focus, :focus-within) .cover-back{
+  transform: rotateY(0);
 }
 
 .pokedex-main {
   inline-size: inherit;
   block-size: inherit;
-  background-color: red;
+  background-color: var(--primary);
 
   display: flex;
   flex-direction: column;
