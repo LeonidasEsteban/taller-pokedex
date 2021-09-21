@@ -1,0 +1,18 @@
+.search {
+  grid-area: search;
+  display: flex;
+}
+
+.search input {
+  padding: .5rem;
+  border-radius: .5rem;
+  border: none;
+  font: var(--body1);
+  font-size: 1rem;
+  flex-grow: 1;
+  outline: none;
+}
+
+.search input:focus {
+  box-shadow: inset 0 0 0 1px var(--secondary);
+}

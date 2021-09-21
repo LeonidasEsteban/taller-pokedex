@@ -4,6 +4,11 @@
 @import './lights.css';
 @import './stats.css';
 @import './screen.css';
+@import './actions.css';
+@import './navigation.css';
+@import './variants.css';
+@import './search.css';
+@import './description.css';
 
 :root {
   --white: #fffffe;
