@@ -5,8 +5,8 @@
 .cover-front {
   inline-size: inherit;
   block-size: inherit;
-  /* background-color: var(--primary); */
-  background-color: green;
+  background-color: var(--primary);
+  /* background-color: green; */
 
   position: absolute;
   inset: 0;
@@ -15,13 +15,18 @@
   /* transform: rotateY(40deg); */
   transform-origin: right center;
   backface-visibility: hidden;
+  border-inline-end: .25rem solid #BA111F;
+  /* border-radius: 0 0 0 .5rem; */
+  border-end-start-radius: .5rem;
+  box-sizing: border-box;
+  clip-path: polygon(0 4.75rem, 70% 3.25rem, 100% 3.25rem, 100% 100%, 0 100%);
 }
 
 .cover-back {
   inline-size: inherit;
   block-size: inherit;
-  /* background-color: var(--primary); */
-  background-color: blue;
+  background-color: var(--primary);
+  /* background-color: blue; */
 
   position: absolute;
   inset: 0;
@@ -31,5 +36,11 @@
   transform: rotateY(-180deg);
   transition: 1s transform;
   transform-origin: left center;
-
+  padding: 1.5rem;
+  padding-block-start: 6.25rem;
+  clip-path: polygon(0 3.25rem, 30% 3.25rem, 100% 4.75rem, 100% 100%, 0 100%);
+  display: flex;
+  box-sizing: border-box;
+  border-end-end-radius: .5rem;
+  border-inline-start: .25rem solid #ba1120;
 }

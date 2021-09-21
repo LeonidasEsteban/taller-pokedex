@@ -2,6 +2,7 @@
 @import './cover.css';
 @import './header.css';
 @import './lights.css';
+@import './stats.css';
 
 :root {
   --white: #fffffe;
