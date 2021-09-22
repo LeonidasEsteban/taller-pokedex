@@ -1,3 +1,74 @@
 .navigation {
+  --buttonSize: 1.5rem;
   grid-area: navigation;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, var(--buttonSize));
+  grid-template-rows: repeat(3, var(--buttonSize));
+  grid-template-areas: '. up .' 'left center right' '. down .';
+  filter: drop-shadow(2px 2px 0 var(--black));
 }
+
+.navigation > *, .navigation:after {
+  inline-size: var(--buttonSize);
+  block-size: var(--buttonSize);
+  border: none;
+  background-color: var(--secondary);
+  cursor: pointer;
+  position: relative;
+}
+
+.navigation > *:active {
+  transform: scale(.9);
+}
+
+.navigation::after {
+  content: '';
+  grid-area: center;
+}
+
+.navigation-left {
+  grid-area: left;
+}
+.navigation-right {
+  grid-area: right;
+
+}
+.navigation-up {
+  grid-area: up;
+
+}
+.navigation-down {
+  grid-area: down;
+
+}
+
+.navigation > *:after {
+  border: .25rem solid transparent;
+  content: '';
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.navigation-left:after {
+  border-inline-start: none;
+  border-inline-end-color: var(--white);
+}
+
+.navigation-right:after {
+  border-inline-end: none;
+  border-inline-start-color: var(--white);
+}
+
+.navigation-up:after {
+  border-block-start: none;
+  border-block-end-color: var(--white);
+}
+
+.navigation-down:after {
+  border-block-end: none;
+  border-block-start-color: var(--white);
+}
+
