@@ -2,7 +2,7 @@
 import { getPokemon, getSpecies } from "./api.js"
 
 const $image = document.querySelector('#image')
-function setImage(image) {
+export function setImage(image) {
   $image.src = image
 }
 
